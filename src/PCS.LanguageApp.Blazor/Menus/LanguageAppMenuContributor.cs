@@ -33,6 +33,33 @@ public class LanguageAppMenuContributor : IMenuContributor
                 order: 0
             )
         );
+        context.Menu.Items.Insert(
+            0,
+            new ApplicationMenuItem(
+                LanguageAppMenus.Activities,
+                l["Menu:Activity1"],
+                "/activities/1",
+                order: 1
+            )
+        );
+        context.Menu.Items.Insert(
+           0,
+           new ApplicationMenuItem(
+               LanguageAppMenus.Activities,
+               l["Menu:Activity2"],
+               "/activities/2",
+               order: 2
+           )
+       );
+        context.Menu.Items.Insert(
+           0,
+           new ApplicationMenuItem(
+               LanguageAppMenus.Activities,
+               l["Menu:Activity3"],
+               "/activities/3",
+               order: 3
+           )
+       );
 
         if (MultiTenancyConsts.IsEnabled)
         {
